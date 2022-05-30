@@ -1,0 +1,8 @@
+[debug] > Exec(;project {file:/D:/Moja%20edukacja/AGH/Semestr%206/Big%20Data/lab7/}root; client, None, None)
+[debug] > Exec(project {file:/D:/Moja%20edukacja/AGH/Semestr%206/Big%20Data/lab7/}root, None, None)
+[error] Not a valid project ID: root
+[error] project {file:/D:/Moja%20edukacja/AGH/Semestr%206/Big%20Data/lab7/}root
+[error]                                                                        ^
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
