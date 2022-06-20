@@ -10,7 +10,7 @@ object Main extends SparkSessionProvider{
   def main(args: Array[String]): Unit = {
     logger.info("Starting application")
     import spark.implicits._
-    val df =new DataReader("2010-summary.csv").read_csv().as[FlightCaseClass]
+    val df =new DataReader(args(0)).read_csv().as[FlightCaseClass]
     df.filter(row => new Transformations().OnlyBigAirports(row)).show()
 
     df.groupByKey(x => x.DEST_COUNTRY_NAME).reduceGroups((l, r) => new Transformations().sum2(l, r))
